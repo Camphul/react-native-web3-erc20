@@ -48,7 +48,7 @@ const erc20Abi = [
 ];
 
 function getWeb3Instance() {
-    const wallet = EthereumJsWallet.fromPrivateKey(Buffer.from('3b6aef7a6aa2ceda0852fc83559d5390579bc1b4b63a2203ab2793efdb9da3dd', 'hex'));
+    const wallet = EthereumJsWallet.fromPrivateKey(Buffer.from('0ec9fd35107767a69ba201585ecb8e8990f669fa29e7bc66c449f712266d490f', 'hex'));
     const engine = new ProviderEngine();
 
     engine.addProvider(new WalletSubprovider(wallet, {}));
@@ -68,7 +68,7 @@ const decimals = 4
 const web3 = getWeb3Instance()
 
  const getERC20Balance = (web3) => {
-    const walletAddress = '0x700E1C53B779d2aFD316Da5231d17Cb8464A899D'
+    const walletAddress = '0x11dB4495b9d866B051eCf15f35F11e68364Dae18'
 
     return new Promise((resolve, reject) => {
       web3.eth
